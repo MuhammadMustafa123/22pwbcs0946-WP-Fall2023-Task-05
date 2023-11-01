@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1200px){
+    *{
+        margin: 0 auto;
+        .container-fluid{
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 992px){
+    *{
+        margin: 0 auto;
+    }
+    .container-fluid{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .container-fluid{
+        img{
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Macondo&family=Metal+Mania&display=swap');
+
+$background:#7c2749;
+$aqua:#362D26;
+$white:#DCD9CD;
+$white:#ffffff;
+$black:#000000;
+
+@mixin h2-style(){
+    text-align: center;
+    margin: 2 auto;
+    background-color: $white;
+    font-family: Metal Mania;
+    padding: 12px 12px;
+    letter-spacing: 4px;
+}
+
+
+@mixin h4-style(){
+    text-align: center;
+    margin-top: 6px;
+    color: $White;
+}
+*{
+    margin: 1 auto;
+}
+#header{
+    background-color: $background;
+}
+
+.navbar{
+    background-color: $aqua;
+    .container-fluid{
+        .navbar-brand{
+            color: $white;
+            font-size: 25px;
+            margin-right: 22%;
+            margin-left: 6%;
+            font-family: Metal Mania;
+            letter-spacing: 4px;
+        }
+    }
+}
+
+.collapse{
+ul{
+li{
+    padding-right: 18px;
+    a{
+        color: $white;
+        font-size: 18px;
+        font-family: Macondo;
+    }
+}
+}
+form{
+    input[type="search"]{
+        background-color: #7c273e;
+        color: $white;
+        &::placeholder{
+        color:$white ;
+        }
+    }
+}
+button{
+    background-color: $white;
+    color: $aqua;
+
+}
+}
+
+
+.home-content{
+.home-text{
+    background-color: $white;
+    text-align: center;
+    p{
+        margin: 1 auto;
+    }
+
+}
+.container-fluid{
+    margin: 1 auto;
+    .row{
+        img{
+        border: 4px solid $black;
+        width: 550px;
+        height: 280px;
+        }
+    }
+}
+}
+#menu{
+    background-color: $white;
+    h2{
+    @include h2-style();
+    }
+    h3{
+    include h3-style();
+    }
+    h4{
+    @include h4-style();
+    }
+    .card{
+        background-color: $background;
+    }
+    img{
+        height: 480px;
+        width: 90%;
+    }
+}
+
+#our-team{
+    background-color: $white;
+    
+    h2{
+        @include h2-style();
+    }
+    .card{
+        background-color: $background;
+    }
+    img{
+        height: 520px;
+        width: 110%;
+    }
+    h3{
+        @include h3-style();
+    }
+    h4{
+        @include h4-style();
+    }
+}
+
+#about{
+    background-color: $white;
+    .row{
+        border: rgba(0, 0, 0, 0.963);
+        h2{
+            @include h2-style();
+        }
+        p{
+            text-align: center;
+            font-family: Great Vibes;
+            font-size: 30px;
+        }
+    }
+}
+
+#form{
+    row{
+        margin: 0 auto;
+    }
+    background-color: $white;
+    h2{
+        @include h2-style();
+    }
+    label{
+        display: block;
+        font-family: Metal Mania;
+        font-size: 30px;
+    }
+    input{
+        width: 60%;
+        padding: 4px;
+        border-radius: 20px;
+        background-color: $background;
+        &::placeholder{
+            color: $white;
+        }
+    }
+    
+    button{
+        background-color: $coffee;
+        color: $white;
+        padding: 6px;
+        border-radius: 25px;
+        margin: 12px;
+        &:hover{
+            color: aqua;
+            background-color: $background;
+        }
+    }
+
+}
+
+.container-f{
+    background-color: $background;
+    text-align: center;
+    h3{
+        @include h3-style();
+        font-family: Metal Mania;
+        margin: 22px 22px;
+    }
+    h5{
+        color: $white;
+    }
+    a{
+        color: $white;
+        &:hover{
+            background-color: #362629;
+            color: aqua;
+        }
+    }
+}
